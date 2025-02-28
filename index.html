@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Goal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="spacer"></div>
+      <!-- <div class="btn-goal">
+        <button class="btn1 btn">My Progress</button>
+        <button class="btn2 btn">All Goals</button>
+        <button class="btn3 btn">Active Goals</button>
+       
+      </div> -->
+      <div class="tab">
+        <ul>
+          <li>My <br />Progress</li>
+          <li>
+            All<br />
+            Goals
+          </li>
+          <li>
+            Active <br />
+            Goals
+          </li>
+          <li>Inactive <br />Goals</li>
+          <li>
+            <a href="team.html">My<br />Team</a>
+          </li>
+        </ul>
+      </div>
+      <div class="progress-container">
+        <div class="progress-wrapper">
+          <div class="progress-circle progress-20">
+            <span class="progress-text">3</span>
+          </div>
+          <p class="progress-description">Stress Level</p>
+        </div>
+
+        <div class="progress-wrapper">
+          <div class="progress-circle progress-75">
+            <span class="progress-text">7</span>
+          </div>
+          <p class="progress-description">Focus Quality</p>
+        </div>
+
+        <div class="progress-wrapper">
+          <div class="progress-circle progress-90">
+            <span class="progress-text">9</span>
+          </div>
+          <p class="progress-description">Time in Flow State</p>
+        </div>
+        <!-- <div class="progress-wrapper">
+          <i class="fas fa-edit edit-icon"></i>
+        </div> -->
+      </div>
+
+      <div class="input-container">
+        <div class="inner-container">
+          <div class="field">
+            <label for="">Challenges faced</label>
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Write Challenges faced"
+            />
+            <!-- <i class="fas fa-edit edit-icon"></i> -->
+          </div>
+          <div class="field">
+            <label for="">Success stories</label>
+            <input type="text" placeholder="Write Success Stories" />
+            <!-- <i class="fas fa-edit edit-icon"></i> -->
+          </div>
+          <div class="progress-btn1">
+            <button>Edit Progress</button>
+          </div>
+          <div class="slider">
+            <div class="inner-slider slider-img">
+              <img src="./images/slider.JPG" />
+            </div>
+            <div class="inner-slider">
+              <label for=""
+                >Stress<br />
+                Level</label
+              >
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div>
+            <div class="inner-slider">
+              <label for="">Focus <br />Quality</label>
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div>
+            <div class="inner-slider">
+              <label for="">Time in <br />Flow State</label>
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div>
+
+            <!-- <div class="inner-slider">
+              <label for="">Time in <br />Flow State</label>
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div> -->
+          </div>
+          <div class="slider-btn">
+            <button>Save</button>
+            <button>Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <table>
+        <tr>
+          <td>
+           
+            <div class="progress-table-container">
+              <div class="progress-circle progress-30">
+                <span class="progress-text">3</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="info-box">
+              <span class="text"
+                >Achieve 2-3 hours of focused deep work daily</span
+              >
+              <div class="icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="progress-table-container">
+              <div class="progress-circle progress-50">
+                <span class="progress-text">5</span>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="info-box">
+              <span class="text"
+                >Create optimal environment for flow states</span
+              >
+              <div class="icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </td>
+          
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <div class="info-box goal-box">
+              <div class="icons">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <span class="text goal">Add Goal</span>
+              <div class="icons">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+      </table> -->
+
+      <div class="tb-container">
+        <div class="btn-goal1">
+          <button>+ &nbsp; New Goals</button>
+        </div>
+        <div class="table-container">
+          <table id="data-table">
+            <thead>
+              <tr>
+                <th>Focus Area</th>
+                <th>Goals</th>
+                <th>Effectiveness</th>
+                <th>Adherence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr onclick="showRowData(this)"> -->
+              <tr>
+                <td>Recovery Management</td>
+                <td>Achieve 2-3 hours of focused deep work daily</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <!-- <tr onclick="showRowData(this)"> -->
+                <td>Flow State Optimization</td>
+                <td>Create optimal environment for flow states</td>
+                <td>6</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <!-- <tr onclick="showRowData(this)"> -->
+                <td>Flow State Optimization</td>
+                <td>Use clear goals and immediate feedback in daily work</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- <div class="overlay" id="overlay" onclick="closeModal()"></div>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <h3>Details</h3>
+          <button class="close-btn" onclick="closeModal()">×</button>
+        </div>
+        <div class="modal-body" id="modal-content"></div>
+      </div> -->
+      <div class="spacer"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
