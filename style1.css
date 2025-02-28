@@ -581,6 +581,26 @@ td {
   font-size: 1rem;
   font-weight: 700;
 }
+th:nth-child(1),
+td:nth-child(1) {
+  width: 20%;
+} /* Name column */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 30%;
+} /* Title column */
+th:nth-child(3),
+td:nth-child(3) {
+  width: 15%;
+} /* Check-in Date column */
+th:nth-child(4),
+td:nth-child(4) {
+  width: 15%;
+} /* Stress Level column */
+th:nth-child(5),
+td:nth-child(5) {
+  width: 20%;
+}
 
 /* .modal {
       display: none;
@@ -827,9 +847,9 @@ td {
   .field input {
     width: 150px;
   }
-  td:first-child {
+  /* td:first-child {
     width: 32%;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
@@ -870,6 +890,7 @@ td {
     padding: 10px;
     font-size: 11px;
   }
+
   .modal {
     width: 90%;
     max-width: 300px;
