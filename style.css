@@ -24,6 +24,14 @@ body {
 .spacer {
   height: 4rem;
 }
+.head {
+  color: #1e90ff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
 .container {
   width: 100%;
   max-width: 100%;
@@ -378,6 +386,37 @@ input[type="range"] {
 .progress-description {
   font-size: 1rem;
   font-weight: 800;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 45%;
+  margin-left: 2rem;
+  border-radius: 5px;
+}
+.search input {
+  width: 100%;
+  margin-left: 1.8rem;
+  padding: 5px 11px;
+  font-size: 0.6rem;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  outline: none;
+}
+.name-head {
+  display: flex;
+  margin-top: 1.6rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 28px;
+  font-size: 10px;
+}
+input::placeholder {
+  font-size: 12px;
 }
 
 .info-box {
@@ -779,6 +818,30 @@ td {
   }
   .modal-body p {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .progress-circle {
+    width: 115px;
+    height: 115px;
+  }
+  .progress-text {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) and (min-width: 600px) {
+  .progress-circle {
+    width: 80px; /* Adjust size */
+    height: 80px;
+  }
+
+  .progress-circle::before {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progress-text {
+    font-size: 1rem;
   }
 }
 @media (max-width: 400px) {
