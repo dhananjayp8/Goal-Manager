@@ -24,25 +24,7 @@ body {
 .spacer {
   height: 4rem;
 }
-.container {
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-}
-.head {
-  color: #1e90ff;
-  font-size: 2rem;
-  font-weight: 800;
-  text-align: left;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
-}
+
 .tab {
   width: 90%;
   margin: 1rem auto;
@@ -420,19 +402,6 @@ input[type="range"] {
   font-size: 18px;
 }
 
-/* table {
-      width: 90%;
-      margin: 2rem auto;
-      border-collapse: collapse;
-      max-width: 100%;
-      table-layout: fixed;
-    }
-    
-    td {
-      height: 70px;
-      padding: 10px;
-    } */
-
 .progress-table-container {
   display: flex;
   align-items: center;
@@ -459,6 +428,26 @@ input[type="range"] {
   border-radius: 10px;
   color: white;
   font-weight: 700;
+}
+/* Team css */
+.team-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+.team-heading {
+  color: #1e90ff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 .search {
   position: relative;
@@ -489,44 +478,11 @@ input[type="range"] {
   font-size: 10px;
 }
 
-input::placeholder {
+.team-input::placeholder {
   font-size: 12px;
 }
-/* .table-container {
-  width: 80%;
-  max-width: 800px;
-  color: black;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin: 1rem auto;
-}
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-th {
-  font-size: 1.2rem;
-  font-weight: 900;
-}
-th,
-td {
-  padding: 20px;
-  text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-}
-
-th {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-tr:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transition: 0.3s ease-in-out;
-} */
-.table-container {
+.team-table-container {
   width: 90%;
   max-width: 1000px;
   color: black;
@@ -536,7 +492,7 @@ tr:hover {
   margin: 1rem auto;
 }
 
-table {
+.team-data-table {
   width: 100%;
   border-collapse: collapse;
 }
@@ -554,7 +510,7 @@ th {
 th span {
   display: inline-flex;
   align-items: center;
-  gap: 5px; /* Adds space between text and icon */
+  gap: 5px;
 }
 
 th img {
@@ -938,137 +894,4 @@ td:nth-child(5) {
   .field input {
     flex: 1;
   }
-  /* 
-      .progress-container {
-        gap: 10px;
-      }
-    
-      .progress-wrapper {
-        width: 70px;
-        height: 70px;
-      }
-    
-      .progress-circle {
-        width: 55px;
-        height: 55px;
-        border-width: 5px;
-        background: conic-gradient(#00b0f0 var(--progress), #ddd 0%);
-        background: conic-gradient(#00b0f0 var(--progress), #ddd 0%);
-      }
-    
-      .progress-circle::before {
-        content: "";
-        position: absolute;
-        width: 65px; 
-        height: 65px;
-        background: white; 
-        border-radius: 50%;
-      }
-      .progress-circle::before {
-        width: 50px;
-        height: 50px;
-      }
-      .progress-circle .progress {
-        stroke-width: 4px !important; 
-      }
-    
-      .progress-text {
-        font-size: 12px;
-      }
-    
-      .progress-description {
-        font-size: 12px;
-      }
-    
-      .input-container {
-        padding: 8px;
-      }
-    
-      .input-container input {
-        font-size: 12px;
-        padding: 5px;
-      }
-      .field label {
-        font-size: 0.9rem;
-      }
-    
-      table {
-        width: 100%;
-      }
-    
-      .progress-table-container {
-        width: 55px;
-        height: 55px;
-      }
-    
-      .info-box {
-        font-size: 12px;
-        padding: 8px;
-      }
-    
-      .info-box .icons {
-        font-size: 14px;
-      }
-    
-      .goal-box {
-        font-size: 12px;
-      }
-      .info-box {
-        width: 180px;
-        font-size: 0.3rem;
-        padding: 2px;
-      }
-      .progress-container {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-      }
-    
-      .progress-circle {
-        width: 70px;
-        height: 70px;
-      }
-    
-      .progress-text {
-        font-size: 1.2rem;
-      } */
 }
-
-/* .progress-text {
-      position: absolute;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #000;
-      background: white;
-      border-radius: 50%;
-      padding: 5px;
-      width: 35px;
-      height: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      aspect-ratio: 1 / 1;
-    } */
-
-/* Responsive Fixes */
-/* @media (max-width: 768px) {
-      .progress-circle {
-        width: 50px;
-        height: 50px;
-        border-width: 5px;
-      }
-      .progress-text {
-        font-size: 1rem;
-      }
-    }
-    
-    @media (max-width: 400px) {
-      .progress-circle {
-        width: 45px;
-        height: 45px;
-        border-width: 4px;
-      }
-      .progress-text {
-        font-size: 0.9rem;
-      }
-    } */
